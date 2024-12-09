@@ -1,6 +1,7 @@
 # just add lines with install.packages() to add packages
 # that are not included in the base container image (see Dockerfile file in the repository).
-
+install.packages("evir")
+install.packages("evmix")
 # We are only installing one package from GitHub, so we use
 # remotes package (already preinstalled in rocker/binder that we use as the fodunation/base).
 # remotes::install_github() function installs an R package from github.com and the provided
