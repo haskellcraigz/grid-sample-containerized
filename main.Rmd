@@ -18,6 +18,28 @@ knitr::opts_chunk$set(fig.width=7, fig.height=5,
 ```
 
 
+# CODE WRITTEN BY ZOE TO TEST CHANGES TO THIS CONTAINER AND FILES
+
+```{r}
+library(evir)
+library(evmix)
+
+
+#generate GPD distribution
+pop <- rnormgpdcon(n = 100, nmean = 120, nsd = 10, u = 140, xi = 0.1, phiu = TRUE)
+
+# summarize distribution
+print(summary(pop))
+
+    
+
+```
+
+
+
+
+# ORIGINAL CODE
+
 
 
 *You can find the original vignette [here](https://github.com/cran/gridsample/blob/master/vignettes/Rwanda.Rmd){target="_blank"}. The code in this adjusted vignette is intended to work with the [latest functioning version of the GridSample package](https://github.com/nrukt00vt/gridsample){target="_blank"}. This code should be executed using R version 4.0.1 from a [Rocker Geospatial](https://hub.docker.com/layers/rocker/geospatial/4.0.1/images/sha256-8282e2f8dfa487a29ce8a78cf5beca1548cc0a0b5142f2f3559d5e3a461dee16){target="_blank"} or [Rocker Binder](https://hub.docker.com/layers/rocker/binder/4.0.1/images/sha256-5278a47893f9f818c04e78c9cb185b4209af0fe392ecc281bc15ea5059f7f9fb){target="_blank"}.*
